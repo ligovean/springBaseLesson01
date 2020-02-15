@@ -1,5 +1,5 @@
 .idea
 src\test
 *.xml
-!\config.xml
+!resources\config.xml
 *.iml
