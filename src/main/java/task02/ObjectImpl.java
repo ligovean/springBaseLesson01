@@ -5,13 +5,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
-@Component("object01")
+@Component("object")
 @Scope("prototype")
-public class Object01 implements SomeObject {
+public class ObjectImpl implements SomeObject {
     Random rnd = new Random();
     int number;
 
-    public Object01() {
+    public ObjectImpl() {
         this.number = rnd.nextInt(1000);
     }
 
