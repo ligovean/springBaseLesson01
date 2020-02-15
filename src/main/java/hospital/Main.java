@@ -10,6 +10,7 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 //        Office office = context.getBean("office",Office.class);
 //        office.visitOffice();
+
         Direction direction = context.getBean("direction",Direction.class);
         direction.visit();
     }
