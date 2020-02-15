@@ -1,9 +1,6 @@
 package hospital;
 
-import hospital.doctors.Doc;
-import hospital.doctors.EndocrinologistImpl;
 import hospital.offices.Office;
-import hospital.offices.Office112Impl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

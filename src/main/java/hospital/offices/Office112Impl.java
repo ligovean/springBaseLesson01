@@ -1,16 +1,17 @@
 package hospital.offices;
 
 import hospital.doctors.Doc;
-import hospital.doctors.EndocrinologistImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-
+@Component("office")
 public class Office112Impl implements Office {
     private String officeNumber;
 
+    @Autowired
+    @Qualifier("Endocrinologist")
     private Doc doctor;
-    //private Doc doctor = new EndocrinologistImpl();
 
     public void setDoc(Doc doctor) {
         this.doctor = doctor;

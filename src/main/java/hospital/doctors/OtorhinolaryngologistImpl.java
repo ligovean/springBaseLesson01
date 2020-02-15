@@ -1,15 +1,18 @@
 package hospital.doctors;
 
 import org.springframework.stereotype.Component;
-@Component("Endocrinologist")
-public class EndocrinologistImpl implements Doc {
+
+@Component("Otorhinolaryngologist")
+public class OtorhinolaryngologistImpl implements Doc {
     private String name;
 
+    @Override
     public String getName() {
         return this.name;
     }
 
+    @Override
     public void getDiagnos(){
-        System.out.println("У вас гормональная Волчанка!");
+        System.out.println("У вас ушная Волчанка!");
     }
 }
