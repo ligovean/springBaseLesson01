@@ -24,7 +24,7 @@ public class Office112Impl implements Office {
     }
 
     public void visitOffice(){
-        System.out.println("Вы в кабинете №" + officeNumber + ".");
+        System.out.printf("Вы в кабинете № %s \n",officeNumber + ".");
         doctor.getDiagnos();
     };
 }
