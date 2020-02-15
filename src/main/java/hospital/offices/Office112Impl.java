@@ -3,10 +3,12 @@ package hospital.offices;
 import hospital.doctors.Doc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("office")
 public class Office112Impl implements Office {
+    @Value("112")
     private String officeNumber;
 
     @Autowired
